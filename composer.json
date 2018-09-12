@@ -1,0 +1,6 @@
+{
+    "require": {
+        "monolog/monolog": "^1.23",
+        "inpsyde/logzio-monolog": "^0.2.0"
+    }
+}

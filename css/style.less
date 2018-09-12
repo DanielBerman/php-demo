@@ -1,0 +1,133 @@
+// Color variables (appears count calculates by raw css)
+@color0: #f8f8f8; // Appears 5 times
+@color1: #e7e7e7; // Appears 3 times
+
+// Width variables (appears count calculates by raw css)
+@width2: 100%; // Appears 3 times
+
+// Height variables (appears count calculates by raw css)
+@height0: 100%; // Appears 2 times
+
+body {
+	height: @height0;
+	width: @width2;
+}
+html {
+	height: @height0;
+	width: @width2;
+}
+body, h1, h2, h3, h4, h5, h6  {
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+}
+.topnav {
+	font-size: 14px;
+}
+.lead {
+	font-size: 18px;
+	font-weight: 400;
+}
+.intro-header {
+	background-size: cover;
+	background: url(../img/intro-bg.jpg) no-repeat center center;
+	color: @color0;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	text-align: center;
+}
+.intro-message {
+	padding-bottom: 20%;
+	padding-top: 20%;
+	position: relative;
+}
+.intro-message>h1 {
+	font-size: 3em;
+	font-size: 5em;
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+.intro-divider {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-top: 1px solid @color0;
+	width: 400px;
+	width: @width2;
+}
+.intro-message>h3 {
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+@media(max-width {
+	&:767px) {
+		.banner h2 { margin: 0;
+		.intro-message { padding-bottom: 15%;
+		font-size: 3em;
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	}
+	&:1199px) {
+		margin-top: 15px;
+		ul.banner-social-buttons { float: left;
+	}
+}
+ul.intro-social-buttons>li {
+	display: block;
+	margin-bottom: 20px;
+	padding: 0;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.network-name {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.content-section-a {
+	background-color: @color0;
+	padding: 50px 0;
+}
+.content-section-b {
+	border-bottom: 1px solid @color1;
+	border-top: 1px solid @color1;
+	padding: 50px 0;
+}
+.section-heading {
+	margin-bottom: 30px;
+}
+.section-heading-spacer {
+	border-top: 3px solid @color1;
+	float: left;
+	width: 200px;
+}
+.banner {
+	background-size: cover;
+	background: url(../img/banner-bg.jpg) no-repeat center center;
+	color: @color0;
+	padding: 100px 0;
+	h2 {
+		font-size: 3em;
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	}
+	ul {
+		margin-bottom: 0;
+	}
+}
+.banner-social-buttons {
+	float: right;
+	margin-top: 0;
+}
+ul.banner-social-buttons>li {
+	display: block;
+	margin-bottom: 20px;
+	padding: 0;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+footer {
+	background-color: @color0;
+	padding: 50px 0;
+}
+p.copyright {
+	margin: 15px 0 0;
+}
